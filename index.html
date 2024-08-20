@@ -4,8 +4,1873 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <h1>Flex IT</h1>
+    <header class="header" id="page-header">
+      <div class="container">
+        <div class="menu_navbar">
+          <div class="header_logo">
+            <a class="first_illustration" href="#"
+              ><img src="./assets/images/logo-light.png" alt=""
+            /></a>
+          </div>
+          <div class="links_menu">
+            <ul class="link_list">
+              <li class="menu-item">
+                <a class="menu-link" href="#0">Home+</a>
+                <!-- <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="./">home 1</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-2.html">home 2</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-3.html">home 3 [ Slider Style 1 ]</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-4.html">home 4 [ Slider Style 2 ]</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="home-rtl.html">home [ RTL languages ]</a></li>
+                </ul> -->
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="about-us.html">About Us </a>
+              </li>
+              <li class="menu-item has-sub-menu">
+                <a class="menu-link" href="#0"
+                  >Services+<i class="fas fa-plus plus-icon"> </i
+                ></a>
+                <!-- <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="services.html">services</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="service-single.html">service single</a></li>
+                </ul> -->
+              </li>
+              <li class="menu-item has-sub-menu">
+                <a class="menu-link" href="#0"
+                  >Portfolio+ <i class="fas fa-plus plus-icon"> </i
+                ></a>
+                <!-- <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="portfolio-grid.html">portfolio grid</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="portfolio-slider.html">portfolio slider</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="portfolio-single.html">portfolio single</a></li>
+                </ul> -->
+              </li>
+              <li class="menu-item has-sub-menu">
+                <a class="menu-link" href="#0"
+                  >Blog+<i class="fas fa-plus plus-icon"> </i
+                ></a>
+                <!-- <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="blog-home-1-col.html">blog home 1 colmun</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="blog-home-2-col.html">blog home 2 columns</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="blog-home-3-col.html">blog home 3 columns</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="post-single.html">single post</a></li>
+                </ul> -->
+              </li>
+              <li class="menu-item has-sub-menu">
+                <a class="menu-link" href="#0"
+                  >Pages+<i class="fas fa-plus plus-icon"> </i
+                ></a>
+                <!-- <ul class="sub-menu ">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="pricing.html">pricing plans</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="our-team.html">our team</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="team-member.html">team member</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="faq.html">FAQ</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link  " href="404.html">404 page</a></li>
+                </ul> -->
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="contact-us.html">Contact Us </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.977 6.977 0 0 0 4.875-1.975z"
+              />
+            </svg>
+          </div>
+          <div class="dark_theme">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12m0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8M11 1h2v3h-2zm0 19h2v3h-2zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414zM23 11v2h-3v-2zM4 11v2H1v-2z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero d-flex align-items-center tringle-bg">
+      <div
+        class="overlay-photo-image-bg"
+        style="
+          background-image: url('assets/images/pattern-bg-1.jpg');
+          opacity: 0.2;
+        "
+      ></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="section_one_container">
+          <div class="left_side">
+            <div class="hero_textarea">
+              <!-- ============ social icons =========== -->
+              <div class="social_icons">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.886 2.886 0 0 0-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.91 2.91 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.912 2.912 0 0 0-.703-1.08a2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122c0 2.717-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06c-2.717 0-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.89 4.89 0 0 1-1.772-1.153a4.905 4.905 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122c.05-1.065.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.213 5.656a8.384 8.384 0 0 1-2.402.658A4.195 4.195 0 0 0 21.649 4c-.82.488-1.719.83-2.655 1.015a4.182 4.182 0 0 0-7.126 3.814a11.874 11.874 0 0 1-8.621-4.37a4.168 4.168 0 0 0-.566 2.103c0 1.45.739 2.731 1.86 3.481a4.169 4.169 0 0 1-1.894-.523v.051a4.185 4.185 0 0 0 3.355 4.102a4.205 4.205 0 0 1-1.89.072A4.185 4.185 0 0 0 8.02 16.65a8.394 8.394 0 0 1-6.192 1.732a11.831 11.831 0 0 0 6.41 1.88c7.694 0 11.9-6.373 11.9-11.9c0-.18-.004-.362-.012-.541a8.497 8.497 0 0 0 2.086-2.164"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- ============ end social icons =========== -->
+
+              <div>
+                <p class="IT_solution">IT SOLUTION</p>
+              </div>
+              <h1 class="hero_title">
+                providing the best services &amp; IT
+                <span class="featured_txt"
+                  >solution
+                  <img
+                    class="feature_svg"
+                    src="./assets/images/dashLine.svg"
+                    alt=""
+                  />
+                </span>
+              </h1>
+              <div class="hero_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                dolorum sunt delectus, maxime ipsa impedit?
+              </div>
+              <div class="btn_box">
+                <div class="btn_inline">
+                  <div class="first_btn">
+                    <button class="strt_btn">start now</button>
+                  </div>
+                  <div class="video_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10M10.622 8.415a.4.4 0 0 0-.622.332v6.506a.4.4 0 0 0 .622.332l4.879-3.252a.401.401 0 0 0 0-.666z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_side">
+            <div class="illustration_container">
+              <img
+                class="illustration_img"
+                src="./assets/images/illustration-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== services section ========================-->
+    <div class="section_two_main container">
+      <div class="section_two_container">
+        <div class="heading_section">
+          <div class="left_head">
+            <div class="content_box">
+              <p class="service">SERVICES</p>
+              <h2 class="Offer_services">Services We Offer</h2>
+              <p class="section_two_p">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id
+                Atque Dignissimos Repellat Quae Ullam.
+              </p>
+            </div>
+          </div>
+          <div class="right-btn">
+            <div class="btn_container">
+              <div class="service_btn_box">
+                <button class="service_btn">
+                  See All Services
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">
+          <div class="first_three_cards">
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 48 48"
+                >
+                  <g fill="none">
+                    <rect
+                      width="40"
+                      height="32"
+                      x="4"
+                      y="8"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="4"
+                      rx="3"
+                    />
+                    <path
+                      stroke="currentColor"
+                      stroke-width="4"
+                      d="M4 11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"
+                    />
+                    <circle
+                      r="2"
+                      fill="currentColor"
+                      transform="matrix(0 -1 -1 0 10 14)"
+                    />
+                    <circle
+                      r="2"
+                      fill="currentColor"
+                      transform="matrix(0 -1 -1 0 16 14)"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="first_crd_title">web development</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!--=======first_three_cards first card end=======-->
+
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none">
+                    <circle cx="12" cy="12" r="1" fill="currentColor" />
+                    <path
+                      stroke="currentColor"
+                      d="M16.5 12c0 2.7-.548 5.12-1.412 6.848C14.21 20.604 13.09 21.5 12 21.5s-2.21-.896-3.088-2.652C8.048 17.12 7.5 14.7 7.5 12s.548-5.12 1.412-6.847C9.79 3.396 10.91 2.5 12 2.5s2.21.896 3.088 2.653C15.952 6.879 16.5 9.299 16.5 12Z"
+                    />
+                    <path
+                      stroke="currentColor"
+                      d="M14.25 15.897c-2.339 1.35-4.709 2.086-6.636 2.201c-1.96.118-3.297-.405-3.841-1.348c-.545-.944-.33-2.362.753-4.001c1.063-1.61 2.885-3.296 5.224-4.646c2.339-1.35 4.709-2.086 6.636-2.201c1.96-.118 3.297.405 3.841 1.348c.545.943.33 2.362-.753 4c-1.063 1.612-2.885 3.297-5.224 4.647Z"
+                    />
+                    <path
+                      stroke="currentColor"
+                      d="M14.25 8.103c-2.339-1.35-4.709-2.086-6.636-2.201c-1.96-.118-3.297.405-3.841 1.348c-.545.943-.33 2.362.753 4c1.063 1.612 2.885 3.297 5.224 4.647c2.339 1.35 4.709 2.086 6.636 2.201c1.96.118 3.297-.405 3.841-1.348c.545-.943.33-2.362-.753-4c-1.063-1.612-2.885-3.297-5.224-4.647Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="first_crd_title">Digital Marketing</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!--=======first_three_cards 2nd card end=======-->
+
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m6.918 6h-3.215a49.088 49.088 0 0 0-.565-3.357A8.048 8.048 0 0 1 18.918 8m-5.904-3.928c.068.352.387 2.038.645 3.928h-3.318c.258-1.89.577-3.576.645-3.928C11.319 4.029 11.656 4 12 4s.681.029 1.014.072M14 12c0 .598-.043 1.286-.109 2h-3.782c-.066-.714-.109-1.402-.109-2s.043-1.286.109-2h3.782c.066.714.109 1.402.109 2M8.862 4.643A49.088 49.088 0 0 0 8.297 8H5.082a8.048 8.048 0 0 1 3.78-3.357M4.263 10h3.821C8.033 10.668 8 11.344 8 12s.033 1.332.085 2H4.263C4.097 13.359 4 12.692 4 12s.098-1.359.263-2m.819 6h3.215c.188 1.424.42 2.65.565 3.357A8.048 8.048 0 0 1 5.082 16m5.904 3.928A77.282 77.282 0 0 1 10.341 16h3.318a78.303 78.303 0 0 1-.645 3.928c-.333.043-.67.072-1.014.072s-.681-.029-1.014-.072m4.152-.571c.145-.707.377-1.933.565-3.357h3.215a8.048 8.048 0 0 1-3.78 3.357M19.737 14h-3.821c.051-.668.084-1.344.084-2s-.033-1.332-.085-2h3.821c.166.641.264 1.308.264 2s-.097 1.359-.263 2"
+                  />
+                </svg>
+              </div>
+              <h3 class="first_crd_title">SaaS Products</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!--=======first_three_cards 3rd card end=======-->
+            <!-- </div>
+          <div class="first_three_cards"> -->
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 14v2a6 6 0 0 0-6 6H4a8 8 0 0 1 8-8m0-1c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6m0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m2.595 7.811a3.505 3.505 0 0 1 0-1.622l-.992-.573l1-1.732l.992.573A3.498 3.498 0 0 1 17 14.645V13.5h2v1.145c.532.158 1.012.44 1.405.812l.992-.573l1 1.732l-.991.573a3.512 3.512 0 0 1 0 1.622l.991.573l-1 1.732l-.992-.573a3.495 3.495 0 0 1-1.405.812V22.5h-2v-1.145a3.495 3.495 0 0 1-1.405-.812l-.992.573l-1-1.732zM18 19.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"
+                  />
+                </svg>
+              </div>
+              <h3 class="first_crd_title">Apps Development</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!--=======2nd_three_cards first card end=======-->
+
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 256 256"
+                >
+                  <g fill="none" stroke="currentColor" stroke-width="16">
+                    <path d="m 89.074145,145.23139 -68.17345,68.17344" />
+                    <path d="M 111.27275,167.42999 43.099304,235.60344" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m 43.099305,235.60344 a 15.696788,15.696788 0 0 1 -22.19861,0"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m 20.900695,213.40483 a 15.696788,15.696788 0 0 0 0,22.19861"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M 240.65575,86.483932 A 70.635544,70.635544 0 0 1 170.0202,157.11948 70.635544,70.635544 0 0 1 99.384659,86.483932 70.635544,70.635544 0 0 1 170.0202,15.848389 70.635544,70.635544 0 0 1 240.65575,86.483932 Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m 89.074145,145.23139 22.198605,22.1986"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m 100.17344,156.33068 19.89988,-19.89987"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m 70.126446,164.17908 22.198606,22.1986"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M 209.26216,86.483936 A 39.241967,39.241967 0 0 1 170.0202,125.7259"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="first_crd_title">Digital Marketing</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!--=======2nd_three_cards 2nd card end=======-->
+
+            <div class="first_crd">
+              <div class="first_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m6.91 5.5l2.3 2.29l-1.42 1.42l-2.29-2.3l-2.29 2.3l-1.42-1.42l2.3-2.29l-2.3-2.29l1.42-1.42l2.29 2.3l2.29-2.3l1.42 1.42m13 13l-1.42-1.42l-2.29 2.3l-2.29-2.3l-1.42 1.42l2.3 2.29l-2.3 2.29l1.42 1.42l2.29-2.3l2.29 2.3l1.42-1.42l-2.3-2.29m.49-11.67L17.18 11L15.6 9.73l1.17-1.5a9.08 9.08 0 0 0-6.66 5.62A4.5 4.5 0 1 1 7.5 13a4 4 0 0 1 .78.08a11.27 11.27 0 0 1 8.15-6.82L15 5.18l1.27-1.58M10 17.5A2.5 2.5 0 1 0 7.5 20a2.5 2.5 0 0 0 2.5-2.5"
+                  />
+                </svg>
+              </div>
+              <h3 class="first_crd_title">Data Analysis</h3>
+              <p class="first_crd_p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                repellendus minima reiciendis nobis dolore obcaecati.
+              </p>
+              <a class="first_crd_link" href="#"
+                >Read Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 12H5m14 0l-4 4m4-4l-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!--=======2nd_three_cards 3rd card end=======-->
+          </div>
+        </div>
+        <!-- end services section-->
+        <!---==========third section start=========-->
+        <div class="third_section_container">
+          <div class="third_left_side">
+            <p class="service">ABOUT US</p>
+            <h1 class="hero_title">
+              Trusted By Worldwide Clients Since
+              <span class="featured_txt"
+                >1980.
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 500 150"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                  ></path>
+                </svg>
+              </span>
+            </h1>
+            <p class="hero_p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+              molestiae dolorum tempora ut accusamus cupiditate! Nesciunt
+              tempora reiciendis libero voluptate!
+            </p>
+            <div class="first_two_cards_parent">
+              <div class="first_crd_parent">
+                <div class="medal_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path
+                        d="M11.146 7.023C11.526 6.34 11.716 6 12 6c.284 0 .474.34.854 1.023l.098.176c.108.194.162.29.246.354c.085.064.19.088.4.135l.19.044c.738.167 1.107.25 1.195.532c.088.283-.164.577-.667 1.165l-.13.152c-.143.167-.215.25-.247.354c-.032.104-.021.215 0 .438l.02.203c.076.785.114 1.178-.115 1.352c-.23.174-.576.015-1.267-.303l-.178-.082c-.197-.09-.295-.135-.399-.135c-.104 0-.202.045-.399.135l-.178.082c-.691.319-1.037.477-1.267.303c-.23-.174-.191-.567-.115-1.352l.02-.203c.021-.223.032-.334 0-.438c-.032-.103-.104-.187-.247-.354l-.13-.152c-.503-.588-.755-.882-.667-1.165c.088-.282.457-.365 1.195-.532l.19-.044c.21-.047.315-.07.4-.135c.084-.064.138-.16.246-.354zM12 16.068l-3.771 3.905c-.54.56-.81.839-1.04.935c-.52.22-1.099.032-1.373-.448c-.12-.21-.158-.59-.232-1.35c-.043-.43-.064-.644-.128-.824a1.433 1.433 0 0 0-.835-.864c-.173-.067-.38-.088-.795-.132c-.734-.078-1.101-.117-1.305-.241c-.463-.284-.646-.883-.433-1.422c.094-.237.364-.517.904-1.076L5.456 12M12 16.068l3.771 3.905c.54.56.81.839 1.04.935c.52.22 1.099.032 1.373-.448c.12-.21.157-.59.232-1.35c.043-.43.064-.644.128-.824c.144-.402.446-.715.835-.864c.173-.067.38-.088.795-.132c.734-.078 1.101-.117 1.305-.241c.463-.284.646-.883.433-1.422c-.094-.237-.364-.517-.904-1.076L18.544 12"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        d="M5.5 6.397A7 7 0 1 0 9.397 2.5"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <h5 class="info-title">First On Field</h5>
+                  <p class="info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+              </div>
+
+              <!--======== 2nd crd===== -->
+
+              <div class="first_crd_parent">
+                <div class="medal_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <path
+                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                      />
+                      <path
+                        fill="currentColor"
+                        d="M17 4c.763 0 1.394.434 1.856.89c.481.473.922 1.109 1.314 1.81c.787 1.406 1.472 3.243 1.925 5.058c.45 1.801.699 3.682.54 5.161C22.475 18.404 21.71 20 20 20c-1.476 0-2.652-.76-3.614-1.531l-.351-.289l-.492-.415l-.444-.368C14.08 16.572 13.175 16 12 16c-1.175 0-2.08.572-3.099 1.397l-.444.368l-.492.415l-.35.289C6.651 19.24 5.475 20 4 20c-1.711 0-2.476-1.596-2.635-3.081c-.158-1.48.09-3.36.54-5.161c.453-1.815 1.138-3.652 1.925-5.059c.392-.7.833-1.336 1.314-1.81C5.606 4.434 6.237 4 7 4c.515 0 1.018.123 1.513.27l.592.181c.099.03.197.06.295.087c.865.248 1.75.462 2.6.462c.85 0 1.735-.214 2.6-.462l.885-.267C15.983 4.124 16.49 4 17 4m0 2c-.383 0-.783.116-1.171.243l-.458.151a7.268 7.268 0 0 1-.221.068c-.885.252-2 .538-3.15.538s-2.265-.286-3.15-.538l-.22-.068l-.459-.151C7.783 6.115 7.383 6 7 6c-.418.078-.793.585-1.076 1.055l-.158.275l-.19.346c-.682 1.218-1.31 2.88-1.73 4.567c-.395 1.576-.587 3.086-.514 4.21l.026.293l.02.176l.03.208c.069.401.218.87.592.87c.812 0 1.49-.404 2.333-1.074l.403-.328l.76-.636l.344-.28C8.904 14.839 10.235 14 12 14c1.765 0 3.096.84 4.16 1.682l.345.28l.76.636l.402.328C18.51 17.596 19.187 18 20 18c.34 0 .494-.387.571-.759l.038-.218l.037-.317c.123-1.146-.067-2.765-.491-4.463c-.386-1.546-.946-3.072-1.562-4.254l-.359-.66l-.158-.273C17.793 6.585 17.418 6.078 17 6M8.5 8a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m7 0a1 1 0 0 1 .993.883L16.5 9v.5h.5a1 1 0 0 1 .117 1.993L17 11.5h-.5v.5a1 1 0 0 1-1.993.117L14.5 12v-.5H14a1 1 0 0 1-.117-1.993L14 9.5h.5V9a1 1 0 0 1 1-1m-7 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <h5 class="info-title">Easy To Reach</h5>
+                  <p class="info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--====3rd crd====--->
+            <div class="first_two_cards_parent">
+              <div class="first_crd_parent">
+                <div class="medal_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M16.219 1.943c.653.512 1.103 1.339 1.287 2.205a.474.474 0 0 1 .065.026l2.045.946a.659.659 0 0 1 .384.597v12.367a.665.665 0 0 1-.85.634l-5.669-1.6l-6.74 1.858a.674.674 0 0 1-.371-.004L.474 17.217a.66.66 0 0 1-.474-.63V3.998c0-.44.428-.756.855-.632l5.702 1.661l2.898-.887a.734.734 0 0 1 .122-.025c.112-.656.425-1.286.95-1.9c.623-.73 1.716-1.158 2.781-1.209c1.105-.053 1.949.183 2.91.936M1.333 4.881v11.215l4.87 1.449V6.298zm8.209.614l-2.006.613v11.279l5.065-1.394v-3.295c0-.364.299-.659.667-.659c.368 0 .666.295.666.66v3.177l4.733 1.335V6.136l-1.12-.52c-.019.11-.043.218-.073.323A6.134 6.134 0 0 1 16.4 8.05l-2.477 3.093a.67.67 0 0 1-1.073-.037l-2.315-3.353c-.382-.534-.65-1.01-.801-1.436a3.744 3.744 0 0 1-.192-.822m3.83-3.171c-.726.035-1.472.327-1.827.742c-.427.5-.637.968-.679 1.442c-.05.571-.016.974.126 1.373c.105.295.314.669.637 1.12l1.811 2.622l1.91-2.385a4.812 4.812 0 0 0 .841-1.657c.24-.84-.122-2.074-.8-2.604c-.695-.545-1.22-.692-2.018-.653m.138.697c1.104 0 2 .885 2 1.977a1.988 1.988 0 0 1-2 1.977c-1.104 0-2-.885-2-1.977s.896-1.977 2-1.977m0 1.318a.663.663 0 0 0-.667.659c0 .364.299.659.667.659a.663.663 0 0 0 .666-.66a.663.663 0 0 0-.666-.658"
+                    />
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <h5 class="info-title">Worldwide Services</h5>
+                  <p class="info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+              </div>
+
+              <!--======== 4th card===== -->
+
+              <div class="first_crd_parent">
+                <div class="medal_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M5.005 9.003a1 1 0 0 1 1 1a6.97 6.97 0 0 1 4.33 1.5h2.17c1.332 0 2.529.579 3.353 1.498l3.147.002a5 5 0 0 1 4.516 2.851c-2.365 3.12-6.194 5.149-10.516 5.149c-2.79 0-5.15-.604-7.061-1.658a.998.998 0 0 1-.94.658h-3a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm1 3v5.02l.045.034c1.794 1.26 4.133 1.946 6.955 1.946c3.004 0 5.798-1.156 7.835-3.13l.133-.133l-.12-.1a2.994 2.994 0 0 0-1.643-.63l-.205-.007l-2.112-.001c.073.322.112.657.112 1v1h-9v-2h6.79l-.034-.079a2.501 2.501 0 0 0-2.092-1.415l-.164-.005h-2.93a4.985 4.985 0 0 0-3.57-1.5m-2-1h-1v7h1zm9.646-7.425l.354.354l.353-.354a2.5 2.5 0 0 1 3.536 3.536l-3.89 3.889l-3.888-3.89a2.5 2.5 0 1 1 3.535-3.535M11.53 4.992a.5.5 0 0 0-.059.637l.058.07l2.475 2.475l2.476-2.475a.5.5 0 0 0 .058-.637l-.058-.07a.5.5 0 0 0-.638-.057l-.07.057l-1.769 1.77l-1.767-1.77l-.068-.058a.5.5 0 0 0-.638.058"
+                    />
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <h5 class="info-title">24/7 Support</h5>
+                  <p class="info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!---====4th crd end=====-->
+            <div class="btn_sign_parent">
+              <div class="first_btn">
+                <button class="get_btn">Get In Touch</button>
+              </div>
+              <div class="sign_img_main">
+                <img
+                  class="signature_img"
+                  src="./assets/images/signature-light.png"
+                  alt=""
+                />
+                <div class="signature_name">CEO & Founder</div>
+              </div>
+            </div>
+          </div>
+          <div class="third_right_section">
+            <div>
+              <img
+                class="third_section_img"
+                src="./assets/images/3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!----=======4th section=====-->
+        <div class="fourth_section_parent">
+          <div class="img_section">
+            <img src="./assets/images/1.png" alt="" />
+          </div>
+          <div class="right_content_section">
+            <p class="service">WHY CHOOSE US</p>
+            <h1 class="hero_title">
+              Why Our Customers Choose
+              <span class="featured_txt"
+                >Working
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 500 150"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                  ></path>
+                </svg>
+              </span>
+              With Us
+            </h1>
+            <p class="hero_p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+              molestiae dolorum tempora ut accusamus cupiditate! Nesciunt
+              tempora reiciendis libero voluptate!
+            </p>
+            <div class="flex_content">
+              <div>
+                <h1 class="head_one">01.</h1>
+              </div>
+              <div>
+                <h5 class="head_five">Latest Technologies</h5>
+                <p class="section_four_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  officia molestiae dolorum tempora ut accusamus cupiditate!
+                  Nesciunt tempora reiciendis libero voluptate!
+                </p>
+              </div>
+            </div>
+            <!----->
+            <div class="flex_content">
+              <div>
+                <h1 class="head_one">02.</h1>
+              </div>
+              <div>
+                <h5 class="head_five">Uniqe Solutions</h5>
+                <p class="section_four_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  officia molestiae dolorum tempora ut accusamus cupiditate!
+                  Nesciunt tempora reiciendis libero voluptate!
+                </p>
+              </div>
+            </div>
+            <!----->
+
+            <div class="flex_content">
+              <div>
+                <h1 class="head_one">03.</h1>
+              </div>
+              <div>
+                <h5 class="head_five">Powerful Strategies</h5>
+                <p class="section_four_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  officia molestiae dolorum tempora ut accusamus cupiditate!
+                  Nesciunt tempora reiciendis libero voluptate!
+                </p>
+              </div>
+            </div>
+            <div class="first_btn">
+              <button class="get_btn">Get In Touch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=====5th section====-->
+    <section class="fifth_section_parent">
+      <div class="fifth_section">
+        <div class="flash_card_parent">
+          <div class="first_flash_crd">
+            <div class="first_card_content">
+              <div class="flash_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="#09aff4"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path d="M12 17v-2m1.732-1a2 2 0 0 1-3.464 0" />
+                    <path
+                      d="M14.5 19.5h-5m5 0c0-.713 0-1.07.038-1.307c.123-.763.144-.812.631-1.412c.151-.186.711-.688 1.832-1.692A7.481 7.481 0 0 0 19.5 9.5a7.47 7.47 0 0 0-.427-2.5M14.5 19.5c0 .935 0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549C13.402 22 12.935 22 12 22s-1.402 0-1.75-.201a1.5 1.5 0 0 1-.549-.549c-.201-.348-.201-.815-.201-1.75m0 0c0-.713 0-1.07-.038-1.307c-.123-.763-.144-.812-.631-1.412c-.151-.186-.712-.688-1.832-1.692A7.5 7.5 0 0 1 15.744 3"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h1 class="flash_card_heading">750+</h1>
+              <p class="flash_card_p">Finished Projects</p>
+            </div>
+          </div>
+          <!----->
+
+          <div class="first_flash_crd">
+            <div class="first_card_content">
+              <div class="flash_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6.5 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0M3 19a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v3H3zm5-3a3 3 0 0 0-3 3v1h14v-1a3 3 0 0 0-3-3z"
+                  />
+                </svg>
+              </div>
+              <h1 class="flash_card_heading">200+</h1>
+              <p class="flash_card_p">Happy Customers</p>
+            </div>
+          </div>
+
+          <!----->
+
+          <div class="first_flash_crd">
+            <div class="first_card_content">
+              <div class="flash_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m18.5 6.75l-.003-2.123A2.25 2.25 0 0 1 20 6.75v7.5a3.2 3.2 0 0 0-1.25-.25h-.25zM4 4.25v3A3.2 3.2 0 0 1 5.25 7h2.846a3.25 3.25 0 0 1 2.381 1.039L16.014 14H17.5V4.25A2.25 2.25 0 0 0 15.25 2h-9A2.25 2.25 0 0 0 4 4.25M5.25 8A2.25 2.25 0 0 0 3 10.25v8.5A3.25 3.25 0 0 0 6.25 22h11.5A3.25 3.25 0 0 0 21 18.75v-1.5A2.25 2.25 0 0 0 18.75 15h-2.846a.75.75 0 0 1-.55-.24l-5.61-6.04A2.25 2.25 0 0 0 8.097 8z"
+                  />
+                </svg>
+              </div>
+              <h1 class="flash_card_heading">23+</h1>
+              <p class="flash_card_p">Created Jobs</p>
+            </div>
+          </div>
+          <!------->
+
+          <div class="first_flash_crd">
+            <div class="first_card_content">
+              <div class="flash_card_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                    <path d="M12 7a5 5 0 1 0 5 5" />
+                    <path d="M13 3.055A9 9 0 1 0 20.941 11" />
+                    <path d="M15 6v3h3l3-3h-3V3zm0 3l-3 3" />
+                  </g>
+                </svg>
+              </div>
+              <h1 class="flash_card_heading">28+</h1>
+              <p class="flash_card_p">Years Of Exprience</p>
+            </div>
+          </div>
+          <!------>
+        </div>
+      </div>
+    </section>
+    <!--===p0rtfolio section===-->
+    <div class="container">
+      <h4 class="service">PORTFOLIO</h4>
+      <div class="hero_header">
+        <h2 class="Awesome_Portfolio">Awesome Portfolio</h2>
+        <div>
+          <div class="btn_container">
+            <div class="service_btn_box">
+              <button class="service_btn">
+                See More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio_menu">
+        <ul class="portfolio_list">
+          <li class="portfolio_items">
+            <a class="portfolio_link" href="#0">All</a>
+          </li>
+          <li class="portfolio_items">
+            <a class="portfolio_link" href="about-us.html">Mobile Apps </a>
+          </li>
+          <li class="portfolio_items">
+            <a class="portfolio_link" href="#0"
+              >Cloud <i class="fas fa-plus plus-icon"> </i
+            ></a>
+          </li>
+          <li class="portfolio_items">
+            <a class="portfolio_link" href="#0"
+              >Data Analaysis <i class="fas fa-plus plus-icon"> </i
+            ></a>
+          </li>
+          <li class="portfolio_items">
+            <a class="portfolio_link" href="#0"
+              >Hosting<i class="fas fa-plus plus-icon"> </i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="portfolio-images_first">
+        <img src="./assets/images/1.jpg" alt="" />
+        <img src="./assets/images/2.jpg" alt="" />
+        <img src="./assets/images/3.jpg" alt="" />
+        <!-- </div>
+      <div class="portfolio-images_first"> -->
+        <img src="./assets/images/4.jpg" alt="" />
+        <img src="./assets/images/5.jpg" alt="" />
+        <img src="./assets/images/6.jpg" alt="" />
+      </div>
+    </div>
+    <!--===client section==-->
+    <div class="client_box">
+      <div class="client_content_container">
+        <div class="client_content">
+          <h2>trusted by over 500 clients around the world</h2>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/1-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/2-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/4-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/5-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/6-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/7-white.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/3-white.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!--==pricing section==-->
+    <div class="container">
+      <h4 class="service">PRICING PLANS</h4>
+      <div class="hero_header">
+        <h2 class="Awesome_Portfolio">Affordable Pricing Plans</h2>
+        <p class="pricing_content">
+          Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis <br />
+          Id Atque Dignissimos Repellat Quae Ullam.
+        </p>
+        <div>
+          <div class="btn_container">
+            <div class="service_btn_box">
+              <button class="service_btn">
+                See All Plans
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing_container">
+        <div class="first_pricing_card">
+          <div class="pricing_svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M1 1.25h12c.3 0 .5.2.5.5v8c0 .3-.2.5-.5.5H1c-.3 0-.5-.2-.5-.5v-8c0-.3.2-.5.5-.5"
+                />
+                <path
+                  d="M4.64 5.75a1.39 1.39 0 1 0 0-2.781a1.39 1.39 0 0 0 0 2.781M6 10.25l-1 2.5m3-2.5l1 2.5m-5 0h6m-5.91-2.5l5.075-4.88a.48.48 0 0 1 .624 0L13.5 8.11"
+                />
+              </g>
+            </svg>
+          </div>
+          <h4 class="pricing_title">Free Plan</h4>
+          <h3 class="ammount">
+            <sup class="price_ammount">$</sup>
+            00
+          </h3>
+          <p class="pricing_p">Per Project</p>
+          <hr class="line" />
+          <div class="plan-details">
+            <ul class="plan-list">
+              <li class="plan-feat">
+                <span class="feat-text"> 150 Lorem, ipsum dolor. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> 20 Lorem ipsum dolor sit . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> Lorem ipsum dolor sit. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> free Lorem ipsum dolor . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> added Lorem ipsum dolor. </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="firstt_btn">
+            <button class="start_btn">Select Plan</button>
+          </div>
+        </div>
+        <!----->
+        <div class="first_pricing_card">
+          <div class="pricing_svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4m13.1-8.16c.01-.11.02-.22.02-.34c0-.12-.01-.23-.03-.34l.74-.58c.07-.05.08-.15.04-.22l-.7-1.21c-.04-.08-.14-.1-.21-.08l-.86.35c-.18-.14-.38-.25-.59-.34l-.13-.93A.182.182 0 0 0 20.2 3h-1.4c-.09 0-.16.06-.17.15l-.13.93c-.21.09-.41.21-.59.34l-.87-.35c-.08-.03-.17 0-.21.08l-.7 1.21c-.04.08-.03.17.04.22l.74.58a1.953 1.953 0 0 0 0 .68l-.74.58c-.07.05-.08.15-.04.22l.7 1.21c.04.08.14.1.21.08l.87-.35c.18.14.38.25.59.34l.13.93c.01.09.08.15.17.15h1.4c.09 0 .16-.06.17-.15l.13-.93c.21-.09.41-.21.59-.34l.87.35c.08.03.17 0 .21-.08l.7-1.21c.04-.08.03-.17-.04-.22zm-2.6.91a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5m.42 3.93l-.5-.87c-.03-.06-.1-.08-.15-.06l-.62.25c-.13-.1-.27-.18-.42-.24l-.09-.66A.15.15 0 0 0 18 10h-1c-.06 0-.11.04-.12.11l-.09.66c-.15.06-.29.15-.42.24l-.62-.25c-.06-.02-.12 0-.15.06l-.5.87c-.03.06-.02.12.03.16l.53.41c-.01.08-.02.16-.02.24c0 .08.01.17.02.24l-.53.41c-.05.04-.06.11-.03.16l.5.87c.03.06.1.08.15.06l.62-.25c.13.1.27.18.42.24l.09.66c.01.07.06.11.12.11h1c.06 0 .12-.04.12-.11l.09-.66c.15-.06.29-.15.42-.24l.62.25c.06.02.12 0 .15-.06l.5-.87c.03-.06.02-.12-.03-.16l-.52-.41c.01-.08.02-.16.02-.24c0-.08-.01-.17-.02-.24l.53-.41c.05-.04.06-.11.04-.17m-2.42 1.65c-.46 0-.83-.38-.83-.83c0-.46.38-.83.83-.83s.83.38.83.83c0 .46-.37.83-.83.83M4.74 9h8.53c.27 0 .49-.22.49-.49v-.02a.49.49 0 0 0-.49-.49H13c0-1.48-.81-2.75-2-3.45v.95c0 .28-.22.5-.5.5s-.5-.22-.5-.5V4.14C9.68 4.06 9.35 4 9 4s-.68.06-1 .14V5.5c0 .28-.22.5-.5.5S7 5.78 7 5.5v-.95C5.81 5.25 5 6.52 5 8h-.26a.49.49 0 0 0-.49.49v.03c0 .26.22.48.49.48M9 13c1.86 0 3.41-1.28 3.86-3H5.14c.45 1.72 2 3 3.86 3"
+              />
+            </svg>
+          </div>
+          <h4 class="pricing_title">Standerd Plan</h4>
+          <h3 class="ammount">
+            <sup class="price_ammount">$</sup>
+            85
+          </h3>
+          <p class="pricing_p">Per Project</p>
+          <hr class="line" />
+          <div class="plan-details">
+            <ul class="plan-list">
+              <li class="plan-feat">
+                <span class="feat-text"> 150 Lorem, ipsum dolor. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> 20 Lorem ipsum dolor sit . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> Lorem ipsum dolor sit. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> free Lorem ipsum dolor . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> added Lorem ipsum dolor. </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="firstt_btn">
+            <button class="start_btn">Select Plan</button>
+          </div>
+        </div>
+        <!----->
+        <div class="third_pricing_card">
+          <div class="pricingg_svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="m4.036 2.488l6.611 2.833L8 6.455L1.427 3.638c.148-.151.329-.273.535-.352zm1.338-.514l1.55-.596a3 3 0 0 1 2.153 0l4.962 1.908c.205.08.386.2.534.352l-2.656 1.138zm9.62 2.572L8.5 7.329v7.45q.295-.05.577-.158l4.962-1.909a1.5 1.5 0 0 0 .961-1.4V4.686q0-.07-.007-.14M7.5 14.779v-7.45L1.007 4.546a2 2 0 0 0-.007.14v6.626a1.5 1.5 0 0 0 .962 1.4l4.961 1.909q.282.108.577.158"
+              />
+            </svg>
+          </div>
+          <h4 class="pricing_title">pro Plan</h4>
+          <h3 class="ammount">
+            <sup class="price_ammount">$</sup>
+            150
+          </h3>
+          <p class="pricing_p">Per Project</p>
+          <hr class="line linee" />
+          <div class="plan-details">
+            <ul class="plan-list">
+              <li class="plan-feat">
+                <span class="feat-text"> 150 Lorem, ipsum dolor. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> 20 Lorem ipsum dolor sit . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> Lorem ipsum dolor sit. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> free Lorem ipsum dolor . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> added Lorem ipsum dolor. </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="firstt_btn">
+            <button class="select_btn">Select Plan</button>
+          </div>
+        </div>
+        <!----->
+        <div class="first_pricing_card">
+          <div class="pricing_svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 2048 2048"
+            >
+              <path
+                fill="currentColor"
+                d="M2048 1280h-419l370 640H595l267-463q-66 38-138 58t-148 21q-119 0-224-45t-183-124t-123-183T0 960q0-119 45-224t124-183t183-123t224-46q85 0 166 24t154 73V128h1152zM576 1408q93 0 174-35t142-97t96-142t36-174q0-92-35-173t-96-143t-142-96t-175-36q-93 0-174 35t-142 96t-96 142t-36 175q0 93 35 174t96 142t142 96t175 36m1201 384q-121-209-240-416t-240-416q-121 209-240 416t-240 416zm143-1536h-896v347q61 75 94 165t34 188l145-252l258 448h365z"
+              />
+            </svg>
+          </div>
+          <h4 class="pricing_title">Ultimate Plan</h4>
+          <h3 class="ammount">
+            <sup class="price_ammount">$</sup>
+            210
+          </h3>
+          <p class="pricing_p">Per Project</p>
+          <hr class="line" />
+          <div class="plan-details">
+            <ul class="plan-list">
+              <li class="plan-feat">
+                <span class="feat-text"> 150 Lorem, ipsum dolor. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> 20 Lorem ipsum dolor sit . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> Lorem ipsum dolor sit. </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> free Lorem ipsum dolor . </span>
+              </li>
+              <li class="plan-feat">
+                <span class="feat-text"> added Lorem ipsum dolor. </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="firstt_btn">
+            <button class="start_btn">Select Plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======testmonials section=======-->
+    <div class="testimonials_main">
+      <div class="img_container">
+        <div class="content_container">
+          <h4 class="service">TESTIMONIALS</h4>
+          <h2 class="Awesome_Portfolio">Customers Testmonials</h2>
+
+          <div class="swiper testmonials_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/avatar.png" alt="" />
+                </div>
+                <p class="testmonials_text">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <p class="customer-name">Fairouz Mhmd</p>
+                <p class="customer_role">Manager</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/avatar 2.png" alt="" />
+                </div>
+                <p class="testmonials_text">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <p class="customer-name">Yusuf Amin</p>
+                <p class="customer_role">Founder</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/avatar 3.png" alt="" />
+                </div>
+                <p class="testmonials_text">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <p class="customer-name">Fouad Osman</p>
+                <p class="customer_role">Officer</p>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/avatar.png" alt="" />
+                </div>
+                <p class="testmonials_text">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <p class="customer-name">Fairouz Mhmd</p>
+                <p class="customer_role">Manager</p>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---=====posts section===-->
+    <div class="container">
+      <h4 class="service">BLOG</h4>
+      <div class="hero_header">
+        <h2 class="Awesome_Portfolio">Latest News</h2>
+        <div>
+          <div class="btn_container">
+            <div class="service_btn_box">
+              <button class="service_btn">
+                See All Posts
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post_card-parent">
+        <!--==first post card==-->
+        <div class="first_post_card">
+          <div class="post_box">
+            <img src="./assets/images/post-1.jpg" alt="" />
+            <span class="post_date">05 oct 2022</span>
+            <div class="post_summary">
+              <div class="flex">
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19.5V5.616q0-.691.463-1.153T7.616 4h8.769q.69 0 1.153.463T18 5.616V19.5l-6-2.577zm1-1.55l5-2.15l5 2.15V5.616q0-.231-.192-.424T16.384 5H7.616q-.231 0-.424.192T7 5.616zM7 5h10z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link" href="#">Hosting</a>
+                </div>
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link_two" href="#">Allan Moore</a>
+                </div>
+              </div>
+              <h2 class="post_title">
+                How litespeed technology works to speed up your site
+              </h2>
+              <p class="post_p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure
+                nulla dolorem, voluptates molestiae
+              </p>
+              <div class="first_child">
+                <div>
+                  <a class="read_link" href="#">Read me</a>
+                </div>
+                <div class="read_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m15.038 6.343l-1.411 1.418l3.27 3.255l-13.605.013l.002 2l13.568-.013l-3.215 3.23l1.417 1.41l5.644-5.67z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==2nd post card==-->
+        <div class="first_post_card">
+          <div class="post_box">
+            <img src="./assets/images/post-2.jpg" alt="" />
+            <span class="post_date">15 sep 2022</span>
+            <div class="post_summary">
+              <div class="flex">
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19.5V5.616q0-.691.463-1.153T7.616 4h8.769q.69 0 1.153.463T18 5.616V19.5l-6-2.577zm1-1.55l5-2.15l5 2.15V5.616q0-.231-.192-.424T16.384 5H7.616q-.231 0-.424.192T7 5.616zM7 5h10z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link" href="#">Web Dev</a>
+                </div>
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link_two" href="#">Mhmd Amin</a>
+                </div>
+              </div>
+              <h2 class="post_title">
+                give your website a new look and feel with themes
+              </h2>
+              <p class="post_p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure
+                nulla dolorem, voluptates molestiae
+              </p>
+              <div class="first_child">
+                <div>
+                  <a class="read_link" href="#">Read me</a>
+                </div>
+                <div class="read_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m15.038 6.343l-1.411 1.418l3.27 3.255l-13.605.013l.002 2l13.568-.013l-3.215 3.23l1.417 1.41l5.644-5.67z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==3rd post card==-->
+        <div class="first_post_card">
+          <div class="post_box">
+            <img src="./assets/images/post-3.jpg" alt="" />
+            <span class="post_date">27 aug 2022</span>
+            <div class="post_summary">
+              <div class="flex">
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6 19.5V5.616q0-.691.463-1.153T7.616 4h8.769q.69 0 1.153.463T18 5.616V19.5l-6-2.577zm1-1.55l5-2.15l5 2.15V5.616q0-.231-.192-.424T16.384 5H7.616q-.231 0-.424.192T7 5.616zM7 5h10z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link" href="#">CEO</a>
+                </div>
+                <div class="first_child">
+                  <div class="post_icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <a class="post_link_two" href="#">Yusuf Amin</a>
+                </div>
+              </div>
+              <h2 class="post_title">
+                the role of domain names in SEO world explained
+              </h2>
+              <p class="post_p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure
+                nulla dolorem, voluptates molestiae
+              </p>
+              <div class="first_child">
+                <div>
+                  <a class="read_link" href="#">Read me</a>
+                </div>
+                <div class="read_svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m15.038 6.343l-1.411 1.418l3.27 3.255l-13.605.013l.002 2l13.568-.013l-3.215 3.23l1.417 1.41l5.644-5.67z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--===-->
+      </div>
+    </div>
+    <!--===footer section==-->
+    <div class="footer_box">
+      <div class="footer-container">
+        <div class="footer_content_container">
+          <div class="footer_first_child">
+            <img
+              class="footer_img"
+              src="./assets/images/logo-colored.png"
+              alt=""
+            />
+            <p class="footer_p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus facere modi possimus dignissimos, aliquam nobis
+              eaque? Voluptatem magnam quisquam rem.
+            </p>
+            <div class="input_section">
+              <label class="label_input" for="email_input"
+                >subscribe to our news letter</label
+              >
+              <input
+                class="email-address"
+                type="email"
+                placeholder="Email Address"
+              />
+              <div>
+                <input
+                  class="subscribe-btn"
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                />
+              </div>
+              <p class="email_notice">*we will not share your personal info</p>
+            </div>
+          </div>
+          <!--==2nd child-->
+          <div class="scnd_child">
+            <h2 class="footer_links">useful links</h2>
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Google</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Dribbble</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">LinkedIn</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Wikipedia</div>
+            </div>
+          </div>
+          <!--==3rd child==-->
+          <div class="scnd_child">
+            <h2 class="footer_links">Resources</h2>
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Support</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Dashboard</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Drivers</div>
+            </div>
+
+            <div class="link_content">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13.47 8.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H6.5a.75.75 0 0 1 0-1.5h9.69z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">Projects</div>
+            </div>
+          </div>
+          <!--===4th child-->
+          <div class="fourth_child">
+            <h2 class="foter_links">Contact Information</h2>
+            <div class="link_content_last">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">example@support.com</div>
+            </div>
+
+            <div class="link_content_last">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">5 Xyz st., Abc, alexandria, egypt.</div>
+            </div>
+            <!--==continue-->
+            <div class="link_content_last">
+              <div class="link_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 25h2M11 3h10a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                  />
+                </svg>
+              </div>
+              <div class="svg_content">+20123456789</div>
+            </div>
+            <!--=social icons-->
+            <div class="social_link_content">
+              <div class="social_icons_footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2"
+                  />
+                </svg>
+              </div>
+              <div class="social_icons_footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z"
+                  />
+                </svg>
+              </div>
+              <div class="social_icons_footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9"
+                  />
+                </svg>
+              </div>
+              <div class="social_icons_footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="0.88em"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48m-48.9 158.8c.2 2.8.2 5.7.2 8.5c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3.6 10.4.8 15.8.8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!--===-->
+          </div>
+        </div>
+        <div class="footer_footer">
+          <div class="credit">
+            © 2023 Created by:
+            <a class="linkkk" href="#">amin-themes</a>
+          </div>
+          <div class="terms">
+            <span><a class="credit" href="#">Terms of Use</a></span>
+            <span class="privacy">
+              <a class="credit" href="#">Privacy Policy</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    c
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/partiles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
